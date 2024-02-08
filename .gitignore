@@ -13,3 +13,4 @@ docker*
 resources
 silverstripe-cache
 vendor
+public/_resources

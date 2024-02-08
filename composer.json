@@ -10,24 +10,15 @@
     "cms"
   ],
   "license": "BSD-3-Clause",
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/silverstripeltd/php-saml.git"
-    }
-  ],
-  "support": {
-    "issues": "https://github.com/NZTransportAgency/okta/issues"
-  },
   "require": {
-    "onelogin/php-saml": "dev-feature/sign-logout-request",
-    "silverstripe/cms": "^4.0",
-    "silverstripe/framework": "^4.0",
-    "silverstripe/subsites": "^2.6",
-    "symbiote/silverstripe-queuedjobs": "^4.2"
+    "onelogin/php-saml": "^4.1",
+    "silverstripe/cms": "^5.1",
+    "silverstripe/framework": "^5.1",
+    "silverstripe/subsites": "^3.1",
+    "symbiote/silverstripe-queuedjobs": "^5.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^9.5",
+    "phpunit/phpunit": "^9.6",
     "squizlabs/php_codesniffer": "^3"
   },
   "scripts": {
@@ -36,5 +27,11 @@
     "test": "phpunit -d memory_limit=512M -d flush=1"
   },
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "silverstripe/vendor-plugin": true
+    }
+  }
 }
